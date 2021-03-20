@@ -1,0 +1,74 @@
+.account-box {
+  max-width: 350px !important;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn {
+  display: block !important;
+  width: 100%;
+  border-radius: 5px !important;
+}
+
+.login-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.normal-btn {
+  border-radius: 5px !important;
+}
+
+.bounce {
+  animation: bounce 0.3s ease-in-out 0.1s backwards;
+}
+
+.loading {
+  text-align: center;
+  color: #009efb;
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  30% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  70% {
+    transform: translateY(10px);
+  }
+  90% {
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+    font-size: 10px;
+  }
+
+  50% {
+    font-size: 12px;
+  }
+
+  100% {
+    opacity: 1;
+    font-size: 14px;
+  }
+}
